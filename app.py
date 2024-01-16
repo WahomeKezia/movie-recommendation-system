@@ -63,12 +63,12 @@ def fetch_poster(movie_id):
 
 # ''' Frontend '''
 
-v = st.write(""" <h2> <b style="color:red"> MoviesWay</b> </h2>""",unsafe_allow_html=True)
+v = st.write(""" <h2> <b style="color:red"> MovieMatch</b> </h2>""",unsafe_allow_html=True)
 # st.header(v)
-# st.header(" :red[MoviesWay]")
+# st.header(" :red[MovieMatch]")
 st.write("###")
 
-st.write(""" <p> Hii, welcome to <b style="color:red">Moviesway</b> this free movie recommendation engine suggests films based on your interest </p>""",unsafe_allow_html=True)
+st.write(""" <p> Hii, welcome to <b style="color:red">MovieMatch</b> a free movie recommendation engine that suggests films based on your interest </p>""",unsafe_allow_html=True)
 st.write("##")
 my_expander = st.expander("Tap to Select a Movie  🌐️")
 selected_movie_name = my_expander.selectbox("",movies["title"].values[:-3])
@@ -93,7 +93,7 @@ if my_expander.button("Recommend"):
 
 #future release
 # with st.sidebar:
-#     st.write("Moviesway🍿")
+#     st.write("MovieMatch🍿")
 
 st.write("##")
 tab1 ,tab2 = st.tabs(["About","Working"])
@@ -103,6 +103,6 @@ with tab1:
     st.caption('In upcoming versions new movies would be added 😎')   #:blue[:sunglasses:]
 with tab2:
     st.caption("It Contains Movie's from The Movie Data Base (TMDB)")
-    st.caption("For more infos and ⭐ at https://github.com/vikramr22/moviesway-v2 ")
+    st.caption("For more infos and ⭐ at https://github.com/vikramr22/MovieMatch-v2 ")
 
 
